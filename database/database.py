@@ -19,12 +19,7 @@ def close_connection(conn):# for closing connection funx
         except sqlite3.Error as e:
             print(f"Error closing database connection: {e}")
 
-def close_connections(conn):# for closing connection funx
-    if conn:
-        try:
-            conn.close()
-        except sqlite3.Error as e:
-            print(f"Error closing database connection: {e}")
+
 
 def get_cursor(conn):# for getting cursor funx
     if conn:
